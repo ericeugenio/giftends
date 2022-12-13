@@ -22,7 +22,7 @@ By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 
 In this document we will explain how the different services of the system were implemented.
 
-See [choices](/choices.md) and [overview_of_the_system](/overview_of_the_system.md) for further explanation on the system architecture.
+See [choices](/docs/choices.md) and [overview_of_the_system](/docs/overview_of_the_system.md) for further explanation on the system architecture.
 
 # Exposure
 
@@ -63,7 +63,7 @@ FTP Server is hosted in an **Azure Virtual Machine**. Bellow are the steps to co
 
 ## GraphQL Server 
 
-As explained in [choices](/choices.md) the GraphQL server is hosted in **Azure App Service**. However, this time, instead of using the **Azure Portal** to create the app, we have used Visual Studio Code and **Azure Extensions**.
+As explained in [choices](/docs/choices.md) the GraphQL server is hosted in **Azure App Service**. However, this time, instead of using the **Azure Portal** to create the app, we have used Visual Studio Code and **Azure Extensions**.
 
 Rather than focusing on how the **Azure App Service** was created and how we deploy it, we are going to explain how the GraphQL Server is implemented and exposed.
 
