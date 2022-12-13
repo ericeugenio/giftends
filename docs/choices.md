@@ -1,6 +1,6 @@
 # Choices
 
-By Gil Dobrovinsky, Roos Madelief and Eric Eugenio.
+By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 
 # Table of contents
 

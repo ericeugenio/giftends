@@ -1,6 +1,6 @@
 # How To
 
-By Gil Dobrovinsky, Roos Madelief and Eric Eugenio.
+By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 
 # Table of contents
 
@@ -59,7 +59,7 @@ FTP Server is hosted in an **Azure Virtual Machine**. Bellow are the steps to co
 4. Define users and groups on FTP server and assign home directories with proper permissions.
 5. Test server with FTP client.
 
-> **TODO:** to be implemented...
+> **TODO:** add exmaple...
 
 ## GraphQL Server 
 
