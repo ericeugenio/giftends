@@ -5,24 +5,24 @@ By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 # Table of contents
 
 - [Introduction](#introduction)
-- [Architecture Diagram](#archtecture-diagram)
+- [Architecture Diagram](#architecture-diagram)
 - [Implemented by](#implemented-by)
 
 # Introduction
 
 In this document we will explain the architecture of our system and who developed each part.
 
-See [how_to](/how_to.md) and [choices](/choices.md) for further explanation on how the services are implemented and the reason of such implementation.
+See [how_to](/docs/how_to.md) and [choices](/docs/choices.md) for further explanation on how the services are implemented and the reason of such implementation.
 
 > **Note:** integration part is a single App Service and an Azure Function with a timer trigger, thus we believe it is not really useful to develop a diragram for it.
 >
 > In this document we will only focus on the exposure part.
 
-# Archtecture Diagram
+# Architecture Diagram
 
-As explained in [choices](/choices.md), We decided to develop our system using a microservices architecture, in this section we are going to exaplin from a simplified view:
+As explained in [choices](/docs/choices.md), We decided to develop our system using a microservices architecture, in this section we are going to exaplin from a simplified view:
 
-![Giftends Architecture Diagram](/assets/images/architecture.png)
+![Giftends Architecture Diagram](/docs/assets/images/architecture.png)
 *Giftends Architecture Diagram*
 
 Of course, this a simple overview of the system but is gives a great understanding of how is organised. There are three main isolated entry points in the system:
@@ -53,7 +53,7 @@ This service consists of an **Azure Windows VM** hosting an FTP server.
 
 ## Products Service
 
-This service consists of an **Azure App Service** exposing both an http server and a ws server as explained in the [how_to](/how_to.md) document. Data is retrieved from a sqlite file stored in the same app service and there is an extra redis cache layer to improve performance.
+This service consists of an **Azure App Service** exposing both an http server and a ws server as explained in the [how_to](/docs/how_to.md) document. Data is retrieved from a sqlite file stored in the same app service and there is an extra redis cache layer to improve performance.
 
 ## Friends Service
 

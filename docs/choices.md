@@ -40,7 +40,7 @@ Due to limitations on our Azure Subscription we decided to work with a VM on the
 > **TODO:** to be implemented...
 
 ## REST Server
-For our REST Server we decided to use Firebase Authentication with node. We looked at Passport as alternative option but we came to the conclusion that our integration would be easier if both us and our partner group would benefit from a smoother integration process if we both used the same auth service. Thus, we came to the conclusion to use Firebase as it has pretty straightforward set up as mentioned in the [how_to](how_to.md).
+For our REST Server we decided to use Firebase Authentication with node. We looked at Passport as alternative option but we came to the conclusion that our integration would be easier if both us and our partner group would benefit from a smoother integration process if we both used the same auth service. Thus, we came to the conclusion to use Firebase as it has pretty straightforward set up as mentioned in the [how_to](/docs/how_to.md).
 
 ## Storage Server
 
