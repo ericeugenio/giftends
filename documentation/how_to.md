@@ -59,7 +59,6 @@ FTP Server is hosted in an **Azure Virtual Machine**. Bellow are the steps to co
 4. Define users and groups on FTP server and assign home directories with proper permissions.
 5. Test server with FTP client.
 
-> **TODO:** to be implemented...
 
 ## GraphQL Server 
 
