@@ -5,7 +5,7 @@ By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 # Table of contents
 
 - [Introduction](#introduction)
-- [Architecture Diagram](#archtecture-diagram)
+- [Architecture Diagram](#architecture-diagram)
 - [Implemented by](#implemented-by)
 
 # Introduction
@@ -18,7 +18,7 @@ See [how_to](/docs/how_to.md) and [choices](/docs/choices.md) for further explan
 >
 > In this document we will only focus on the exposure part.
 
-# Archtecture Diagram
+# Architecture Diagram
 
 As explained in [choices](/docs/choices.md), We decided to develop our system using a microservices architecture, in this section we are going to exaplin from a simplified view:
 
