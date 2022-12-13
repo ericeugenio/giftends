@@ -22,7 +22,7 @@ See [how_to](/how_to.md) and [choices](/choices.md) for further explanation on h
 
 As explained in [choices](/choices.md), We decided to develop our system using a microservices architecture, in this section we are going to exaplin from a simplified view:
 
-![Giftends Architecture Diagram](/assets/images/architecture.png)
+![Giftends Architecture Diagram](/docs/assets/images/architecture.png)
 *Giftends Architecture Diagram*
 
 Of course, this a simple overview of the system but is gives a great understanding of how is organised. There are three main isolated entry points in the system:
