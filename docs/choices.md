@@ -5,7 +5,8 @@ By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 # Table of contents
 
 - [Introduction](#introduction)
-- [Exposure](#exposing)
+- [Microservices](#microservices)
+- [Services](#services)
     - [CDN](#cdn)
     - [FTP Server](#ftp-server)
     - [GraphQL Server](#graphql-server)
@@ -17,11 +18,15 @@ By Gil Dobrovinsky, Roos Lindeboom and Eric Eugenio.
 
 In this document we will explain the reasons of the implementation of the different services in our system and the architecture itself.
 
-See [how_to](/how_to.md) for further explanation on how the system is implemented.
+See [how_to](/docs/how_to.md) for further explanation on how the system is implemented.
 
 # Microservices
 
+Why Microservices?...
+
 # Services
+
+After understanding why we decided to implement microserivces, we will explain why each service was implemented as it is.
 
 ## CDN
 
@@ -32,7 +37,11 @@ Due to limitations on our Azure Subscription we decided to work with a VM on the
 
 ## WS Server
 
+> **TODO:** to be implemented...
+
 ## REST Server
 For our REST Server we decided to use Firebase Authentication with node. We looked at Passport as alternative option but we came to the conclusion that our integration would be easier if both us and our partner group would benefit from a smoother integration process if we both used the same auth service. Thus, we came to the conclusion to use Firebase as it has pretty straightforward set up as mentioned in the [how_to](how_to.md).
 
 ## Storage Server
+
+> **TODO:** to be implemented...
