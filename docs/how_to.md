@@ -257,10 +257,11 @@ If the GraphQL server runs without problems, we start the WS server.
 
 ## REST Server 
 
-Authentication is done through a REST API hosted in an **Azure Function App** containing three different functions/endpoints triggered by an HTTP Request:
+Authentication is done through a REST API hosted in an **Azure Function App** containing four different functions/endpoints triggered by an HTTP Request:
 
 - [/signup](#signup)
 - [/login](#login)
+- [/refresh](#refresh)
 - [/acceptInvite](#acceptinvite)
 
 As with the GraphQL server, instead of using the Azure Portal to create the function app, we have used Visual Studio Code and Azure Extensions. Thus, we are only going to focus how the Authentication API is implemented and exposed.
@@ -337,6 +338,31 @@ import { signInWithEmailAndPassword } from firebase/auth"
 The functions behaves as the previous one, but instead of creating the user with the entered credentials, it checks from the existing users to sign in.
 
 On succes, we return the user, as well as a JWT token and a refresh token, also the expiration time of the token. On failure we report the error.
+
+#### /refresh
+
+This time, because of how firebase package is implemented, refreshing a token implementation relies on the firebase API rather than the module. by making a call to 
+
+```bash
+https://securetoken.googleapis.com/v1/token?key=[API_KEY]
+```
+
+Using [node-fetch](https://github.com/node-fetch/node-fetch) we make a call to the api using the refresh token from the user:
+
+```js
+    const refreshUrl = `https://securetoken.googleapis.com/v1/token?key=${config.apiKey}`
+    const options = {
+        method: 'POST',
+        body: JSON.stringify({
+            grant_type: 'refresh_token',
+            refresh_token: refreshToken
+        })
+    }
+
+    const response = await fetch(refreshUrl, options)
+```
+
+On succes, we return a new JWT token and a refresh token, also the expiration time of the token. On failure we report the error.
 
 #### /acceptInvite
 
